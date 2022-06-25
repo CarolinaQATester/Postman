@@ -1,0 +1,365 @@
+{
+	"info": {
+		"_postman_id": "0e0cdf06-c83c-457e-9641-16052da2cf2b",
+		"name": "API de teste Gorest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Posts",
+			"item": [
+				{
+					"name": "RetornandoPost",
+					"_postman_id": "4fc070d5-a9f1-46d4-b638-ffa3a1b06c90",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://gorest.co.in/public/v2/posts"
+					},
+					"response": []
+				},
+				{
+					"name": "CriaçaoDePost",
+					"_postman_id": "6d36744f-6a7e-4ed7-86ad-ec7e842f8dbb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "b7bdc0485c1046c5906b92d052bd56f906a9e3120ccfc9c80682958325668fb3"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\n    \"user_id\": 4169,\n    \"title\": \"teste teste teste\",\n    \"body\": \"apenas um teste \"\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://gorest.co.in/public/v2/posts"
+					},
+					"response": []
+				},
+				{
+					"name": "AtualizandoPost",
+					"_postman_id": "c156b2ee-d5eb-41df-bc2a-d633f9acfb08",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2024,\n    \"user_id\": 4169,\n    \"title\": \"teste teste teste\",\n    \"body\": \"apredendo fazer teste manual no postman\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://gorest.co.in/public/v2/posts/2024"
+					},
+					"response": []
+				},
+				{
+					"name": "RetornarPostPorId",
+					"_postman_id": "9925211b-4350-4ea0-8ad7-a95bac704d99",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://gorest.co.in/public/v2/posts/2024"
+					},
+					"response": []
+				},
+				{
+					"name": "ExcluindoUmPost",
+					"_postman_id": "cc1726ac-aa1e-460a-b7f7-cd6d98b8ca6e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "https://gorest.co.in/public/v2/posts/2024"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "cef54253-8c14-4320-b355-069c5431afb1"
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "CriacaoDeUsuario",
+					"_postman_id": "346d1b13-669f-46c3-a553-762ca914e15a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "b7bdc0485c1046c5906b92d052bd56f906a9e3120ccfc9c80682958325668fb3"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n   \n    \"name\": \"Teste de ctiação com metodo post\",\n    \"email\": \"teste@teste.com.br\",\n    \"gender\": \"female\",\n    \"status\": \"active\"\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://gorest.co.in/public/v2/users/"
+					},
+					"response": []
+				},
+				{
+					"name": "RecuperarUsuario",
+					"_postman_id": "2d37da18-1dbe-42a3-bd14-5afd93ebdb5a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "b7bdc0485c1046c5906b92d052bd56f906a9e3120ccfc9c80682958325668fb3"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n   \n    \"name\": \"Teste de ctiação com metodo post\",\n    \"email\": \"teste@teste.com.br\",\n    \"gender\": \"female\",\n    \"status\": \"active\"\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://gorest.co.in/public/v2/users"
+					},
+					"response": []
+				},
+				{
+					"name": "RecuperaUsuarioPorId",
+					"_postman_id": "54af285b-3c28-46f9-b57f-47fb84a261e1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "b7bdc0485c1046c5906b92d052bd56f906a9e3120ccfc9c80682958325668fb3"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n   \n    \"name\": \"Teste de ctiação com metodo post\",\n    \"email\": \"teste@teste.com.br\",\n    \"gender\": \"female\",\n    \"status\": \"active\"\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://gorest.co.in/public/v2/users/4169"
+					},
+					"response": []
+				},
+				{
+					"name": "AtualizandoUser",
+					"_postman_id": "5b839a67-5948-4161-be98-84d2d6747725",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 4169,\n    \"name\": \"Teste de atualização com metodo patch\",\n    \"email\": \"teste@teste.com.br\",\n    \"gender\": \"female\",\n    \"status\": \"active\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://gorest.co.in/public/v2/users/4169"
+					},
+					"response": []
+				},
+				{
+					"name": "ExcluirUmUser",
+					"_postman_id": "e8968c1d-9405-41ca-8a77-cb7ac36fd5e0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "https://gorest.co.in/public/v2/users/4169"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "a4997b71-0a8b-499c-8332-fac14a89a01d"
+		},
+		{
+			"name": "Comentarios",
+			"item": [
+				{
+					"name": "RetornandoComentarios",
+					"_postman_id": "27ad67e1-83ea-4b6e-922f-ea9232755e10",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://gorest.co.in/public/v2/comments"
+					},
+					"response": []
+				},
+				{
+					"name": "CriandoComentarios",
+					"_postman_id": "90a1f66c-91cc-4b7e-a93a-919fc41c03aa",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n    \"post_id\": 2018,\n    \"name\": \"Jitendra Pillai Esq.\",\n    \"email\": \"pillai_esq_jitendra@abbott.info\",\n    \"body\": \"Eos accusantium repellendus.\"\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://gorest.co.in/public/v2/comments/"
+					},
+					"response": []
+				},
+				{
+					"name": "RetornarComentarioPorId",
+					"_postman_id": "90fe8449-065d-4ec6-b6d6-b7007aad7375",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://gorest.co.in/public/v2/comments/2000"
+					},
+					"response": []
+				},
+				{
+					"name": "AtualizandoComentario",
+					"_postman_id": "05c80bad-3bc9-41b5-9496-d0ac5b9433f5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2000,\n    \"post_id\": 2018,\n    \"name\": \"Teste Postman Carolina\",\n    \"email\": \"teste@teste.com.br\",\n    \"body\": \"teste para teste metodo patch, para verificar se está fazendo atualização no sistema\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://gorest.co.in/public/v2/comments/2000"
+					},
+					"response": []
+				},
+				{
+					"name": "ExcluindoComentario",
+					"_postman_id": "5eb745b9-3899-4129-9f9d-48ee6755182f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "https://gorest.co.in/public/v2/comments/2000"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "1447fe73-1fa5-4c4f-97ed-ad343ff5ea38"
+		},
+		{
+			"name": "todos",
+			"item": [
+				{
+					"name": "RecuperandoTodos",
+					"_postman_id": "5820b235-f2a5-4b24-a2d3-af574ce8e734",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "a7d973cb-c341-42af-be2c-d6eb4bfc5a52"
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "b7bdc0485c1046c5906b92d052bd56f906a9e3120ccfc9c80682958325668fb3"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "c286c383-5369-418c-b0a4-1b07d781fa5e",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "0ad8a3cf-433c-4411-8e81-b8c581f1a8c8",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
