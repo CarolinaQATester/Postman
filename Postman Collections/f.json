@@ -249,6 +249,35 @@
 						"url": "https://gorest.co.in/public/v2/users/4169"
 					},
 					"response": []
+				},
+				{
+					"name": "RecuperarUsuarioComParametroPath",
+					"id": "52e001d0-71e9-4857-ab6c-d51f0d90b8f2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "b7bdc0485c1046c5906b92d052bd56f906a9e3120ccfc9c80682958325668fb3"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n   \n    \"name\": \"Teste de ctiação com metodo post\",\n    \"email\": \"teste@teste.com.br\",\n    \"gender\": \"female\",\n    \"status\": \"active\"\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://gorest.co.in/public/v2/users",
+						"description": "Recuperar Usuario com Parametro Path"
+					},
+					"response": []
 				}
 			],
 			"id": "a4997b71-0a8b-499c-8332-fac14a89a01d"
