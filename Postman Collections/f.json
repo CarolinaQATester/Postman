@@ -10,7 +10,7 @@
 			"item": [
 				{
 					"name": "RetornandoPost",
-					"_postman_id": "4fc070d5-a9f1-46d4-b638-ffa3a1b06c90",
+					"id": "4fc070d5-a9f1-46d4-b638-ffa3a1b06c90",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -23,7 +23,7 @@
 				},
 				{
 					"name": "CriaçaoDePost",
-					"_postman_id": "6d36744f-6a7e-4ed7-86ad-ec7e842f8dbb",
+					"id": "6d36744f-6a7e-4ed7-86ad-ec7e842f8dbb",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -51,7 +51,7 @@
 				},
 				{
 					"name": "AtualizandoPost",
-					"_postman_id": "c156b2ee-d5eb-41df-bc2a-d633f9acfb08",
+					"id": "c156b2ee-d5eb-41df-bc2a-d633f9acfb08",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -73,7 +73,7 @@
 				},
 				{
 					"name": "RetornarPostPorId",
-					"_postman_id": "9925211b-4350-4ea0-8ad7-a95bac704d99",
+					"id": "9925211b-4350-4ea0-8ad7-a95bac704d99",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -86,7 +86,7 @@
 				},
 				{
 					"name": "ExcluindoUmPost",
-					"_postman_id": "cc1726ac-aa1e-460a-b7f7-cd6d98b8ca6e",
+					"id": "cc1726ac-aa1e-460a-b7f7-cd6d98b8ca6e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -98,14 +98,14 @@
 					"response": []
 				}
 			],
-			"_postman_id": "cef54253-8c14-4320-b355-069c5431afb1"
+			"id": "cef54253-8c14-4320-b355-069c5431afb1"
 		},
 		{
 			"name": "User",
 			"item": [
 				{
 					"name": "CriacaoDeUsuario",
-					"_postman_id": "346d1b13-669f-46c3-a553-762ca914e15a",
+					"id": "346d1b13-669f-46c3-a553-762ca914e15a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -133,7 +133,35 @@
 				},
 				{
 					"name": "RecuperarUsuario",
-					"_postman_id": "2d37da18-1dbe-42a3-bd14-5afd93ebdb5a",
+					"id": "2d37da18-1dbe-42a3-bd14-5afd93ebdb5a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "b7bdc0485c1046c5906b92d052bd56f906a9e3120ccfc9c80682958325668fb3"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n   \n    \"name\": \"Teste de ctiação com metodo post\",\n    \"email\": \"teste@teste.com.br\",\n    \"gender\": \"female\",\n    \"status\": \"active\"\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://gorest.co.in/public/v2/users"
+					},
+					"response": []
+				},
+				{
+					"name": "RecuperarUsuarioComParametroPath",
+					"id": "0c406c16-8d06-4b8c-b397-67ec61e5d51a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -161,7 +189,7 @@
 				},
 				{
 					"name": "RecuperaUsuarioPorId",
-					"_postman_id": "54af285b-3c28-46f9-b57f-47fb84a261e1",
+					"id": "54af285b-3c28-46f9-b57f-47fb84a261e1",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -189,7 +217,7 @@
 				},
 				{
 					"name": "AtualizandoUser",
-					"_postman_id": "5b839a67-5948-4161-be98-84d2d6747725",
+					"id": "5b839a67-5948-4161-be98-84d2d6747725",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -211,7 +239,7 @@
 				},
 				{
 					"name": "ExcluirUmUser",
-					"_postman_id": "e8968c1d-9405-41ca-8a77-cb7ac36fd5e0",
+					"id": "e8968c1d-9405-41ca-8a77-cb7ac36fd5e0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -223,14 +251,14 @@
 					"response": []
 				}
 			],
-			"_postman_id": "a4997b71-0a8b-499c-8332-fac14a89a01d"
+			"id": "a4997b71-0a8b-499c-8332-fac14a89a01d"
 		},
 		{
 			"name": "Comentarios",
 			"item": [
 				{
 					"name": "RetornandoComentarios",
-					"_postman_id": "27ad67e1-83ea-4b6e-922f-ea9232755e10",
+					"id": "27ad67e1-83ea-4b6e-922f-ea9232755e10",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -243,7 +271,7 @@
 				},
 				{
 					"name": "CriandoComentarios",
-					"_postman_id": "90a1f66c-91cc-4b7e-a93a-919fc41c03aa",
+					"id": "90a1f66c-91cc-4b7e-a93a-919fc41c03aa",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -265,7 +293,7 @@
 				},
 				{
 					"name": "RetornarComentarioPorId",
-					"_postman_id": "90fe8449-065d-4ec6-b6d6-b7007aad7375",
+					"id": "90fe8449-065d-4ec6-b6d6-b7007aad7375",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -278,7 +306,7 @@
 				},
 				{
 					"name": "AtualizandoComentario",
-					"_postman_id": "05c80bad-3bc9-41b5-9496-d0ac5b9433f5",
+					"id": "05c80bad-3bc9-41b5-9496-d0ac5b9433f5",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -300,7 +328,7 @@
 				},
 				{
 					"name": "ExcluindoComentario",
-					"_postman_id": "5eb745b9-3899-4129-9f9d-48ee6755182f",
+					"id": "5eb745b9-3899-4129-9f9d-48ee6755182f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -312,26 +340,25 @@
 					"response": []
 				}
 			],
-			"_postman_id": "1447fe73-1fa5-4c4f-97ed-ad343ff5ea38"
+			"id": "1447fe73-1fa5-4c4f-97ed-ad343ff5ea38"
 		},
 		{
 			"name": "todos",
 			"item": [
 				{
 					"name": "RecuperandoTodos",
-					"_postman_id": "5820b235-f2a5-4b24-a2d3-af574ce8e734",
+					"id": "5820b235-f2a5-4b24-a2d3-af574ce8e734",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
-						"url": null
+						"header": []
 					},
 					"response": []
 				}
 			],
-			"_postman_id": "a7d973cb-c341-42af-be2c-d6eb4bfc5a52"
+			"id": "a7d973cb-c341-42af-be2c-d6eb4bfc5a52"
 		}
 	],
 	"auth": {
