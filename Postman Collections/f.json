@@ -160,7 +160,7 @@
 					"response": []
 				},
 				{
-					"name": "RecuperarUsuarioComParametroPath",
+					"name": "RecuperarUsuarioComParametroQuery",
 					"id": "0c406c16-8d06-4b8c-b397-67ec61e5d51a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
