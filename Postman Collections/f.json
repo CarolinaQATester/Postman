@@ -189,6 +189,18 @@
 				},
 				{
 					"name": "RecuperaUsuarioPorId",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "4b8630e2-19a1-496c-be4d-1dca20b72f59",
+								"exec": [
+									"pm.variables.set(\"id_users\", \"3571\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "54af285b-3c28-46f9-b57f-47fb84a261e1",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -211,7 +223,7 @@
 								}
 							}
 						},
-						"url": "https://gorest.co.in/public/v2/users/4169"
+						"url": "https://gorest.co.in/public/v2/users/{{id_users}}"
 					},
 					"response": []
 				},
