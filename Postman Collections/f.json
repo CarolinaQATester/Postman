@@ -277,8 +277,18 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n       \"id\": 3571,\n       \"name\": \"Carolina H Mesquita\",\n       \"email\": \"teste@teste.co\",\n       \"gender\": \"female\",\n       \"status\": \"active\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://gorest.co.in/public/v2/users/3571"
 					},
 					"response": []
 				}
