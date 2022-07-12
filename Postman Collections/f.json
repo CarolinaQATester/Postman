@@ -269,6 +269,18 @@
 						"description": "Recuperar Usuario com Parametro Path"
 					},
 					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "c6e19af4-85cb-4d5b-9912-b110b8a09428",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "a4997b71-0a8b-499c-8332-fac14a89a01d"
