@@ -425,17 +425,18 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "c286c383-5369-418c-b0a4-1b07d781fa5e",
+				"id": "de979fad-c10f-4b97-bf80-1a22a74e0276",
 				"type": "text/javascript",
 				"exec": [
-					""
+					"pm.variables.set(\"id_users\", \"3568\");",
+					"pm.environment.set(\"id_users\", \"3568\");"
 				]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
-				"id": "0ad8a3cf-433c-4411-8e81-b8c581f1a8c8",
+				"id": "367f0417-d21c-4a6d-8cf0-738160d24c1d",
 				"type": "text/javascript",
 				"exec": [
 					""
