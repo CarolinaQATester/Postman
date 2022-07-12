@@ -265,16 +265,7 @@
 						},
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": " {\n   \n    \"name\": \"Teste de ctiação com metodo post\",\n    \"email\": \"teste@teste.com.br\",\n    \"gender\": \"female\",\n    \"status\": \"active\"\n  }",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "https://gorest.co.in/public/v2/users",
+						"url": "https://gorest.co.in/public/v2/users/3568",
 						"description": "Recuperar Usuario com Parametro Path"
 					},
 					"response": []
