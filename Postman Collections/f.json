@@ -305,7 +305,29 @@
 					"response": []
 				}
 			],
-			"id": "a4997b71-0a8b-499c-8332-fac14a89a01d"
+			"id": "a4997b71-0a8b-499c-8332-fac14a89a01d",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "30508a49-a765-4e96-a035-a84edcc257cf",
+						"type": "text/javascript",
+						"exec": [
+							"console.log(\"Script executado na pasta\")"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "46f8f93b-2e52-4d33-9150-e9a332e68f5b",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Comentarios",
