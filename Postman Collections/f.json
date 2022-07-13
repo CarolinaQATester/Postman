@@ -583,7 +583,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "0fbd3fd2-5f4e-4daf-bd43-93b82def074c",
+						"id": "9379f4e9-3ea6-466d-8d7e-5262752f830f",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -593,21 +593,13 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "d9ff1efa-1d91-4b42-9f1c-a8f77e10c941",
+						"id": "ca0fcaaf-32b4-4894-9529-4afa9d371e20",
 						"type": "text/javascript",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {",
 							"       pm.response.to.have.status(200);",
 							"});",
-							"pm.test(\"Response time is less than 200ms\", function () {",
-							"       pm.expect(pm.response.responseTime).to.be.below(2000);",
-							"});",
-							"pm.test(\"Content-Type is present\", function () {",
-							"       pm.response.to.have.header(\"Content-Type\");",
-							"});",
-							"pm.test(\"Body matches string\", function () {",
-							"       pm.expect(pm.response.text()).to.include(\"dc_johar_mahendra@leffler.co\");",
-							"});"
+							"console.log(\"Rodou teste da pasta\")"
 						]
 					}
 				}
