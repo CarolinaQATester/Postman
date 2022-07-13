@@ -289,6 +289,41 @@
 				},
 				{
 					"name": "AtualizandoUser",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "ab906cd4-6346-4400-8837-5c1fde49c792",
+								"exec": [
+									"pm.variables.set(\"gender\", \"female\");",
+									"console.log(\"Genero atualizado com sucesso\")"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "07f53f66-359d-4cd2-b982-c0a8bc575486",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"       pm.response.to.have.status(200);",
+									"});",
+									"console.log(\"Genero atualizado com sucesso\")",
+									"",
+									"pm.test(\"Body matches string\", function () {",
+									"       pm.expect(pm.response.text()).to.include(\"female\");",
+									"var jsonObject = xml2Json(responseBody);",
+									"console.log(responseBody)",
+									"pm.test(\"Content-Type is present\", function () {",
+									"    pm.response.to.have.header(\"Content-Type\");",
+									"});",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "5b839a67-5948-4161-be98-84d2d6747725",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -298,14 +333,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 4169,\n    \"name\": \"Teste de atualização com metodo patch\",\n    \"email\": \"teste@teste.com.br\",\n    \"gender\": \"female\",\n    \"status\": \"active\"\n}",
+							"raw": "{\n    \"id\":\"4809\",\n    \"gender\": \"female\"\n    \n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "https://gorest.co.in/public/v2/users/4169"
+						"url": "https://gorest.co.in/public/v2/users/4809"
 					},
 					"response": []
 				},
