@@ -145,6 +145,31 @@
 			"item": [
 				{
 					"name": "CriacaoDeUsuario",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "323bc7c6-b3dd-4fcc-bdd4-fcfd86ecddff",
+								"exec": [
+									"//console.log(\"Pre script executado na requisição\")"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "663bd198-ca03-4fde-a9f1-767618911e4c",
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {",
+									"       pm.expect(pm.response.code).to.be.oneOf([201, 202]);",
+									"});",
+									"console.log(\"Usuario criado com sucesso\")"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "346d1b13-669f-46c3-a553-762ca914e15a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -160,7 +185,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": " {\n   \n    \"name\": \"Teste de ctiação com metodo post\",\n    \"email\": \"teste@teste.com.br\",\n    \"gender\": \"female\",\n    \"status\": \"active\"\n  }",
+							"raw": "{\n       \"name\": \"Carolina H Mesquita\",\n       \"email\": \"test@test.com.br\",\n       \"gender\": \"female\",\n       \"status\": \"active\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
