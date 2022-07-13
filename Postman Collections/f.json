@@ -491,22 +491,23 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "501658e8-d694-40d7-be41-5833dc6152fa",
+				"id": "a1ceb220-be40-43c9-b069-8c185d4de514",
 				"type": "text/javascript",
 				"exec": [
-					"console.log(\"Script executado na coleção\")"
+					"//console.log(\"Script executado na coleção\")"
 				]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
-				"id": "7b194bdc-fd24-4e6e-b7ac-addc1e430581",
+				"id": "fa4d43f4-8ebf-4886-8561-6389a169f3f1",
 				"type": "text/javascript",
 				"exec": [
 					"pm.test(\"Status code is 200\", function () {",
 					"       pm.response.to.have.status(200);",
-					"});"
+					"});",
+					"console.log(\"Teste na coleção\")"
 				]
 			}
 		}
