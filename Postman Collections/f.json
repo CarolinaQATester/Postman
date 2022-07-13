@@ -233,9 +233,9 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "4b8630e2-19a1-496c-be4d-1dca20b72f59",
+								"id": "bd1f493b-6664-44ee-bc67-9a1dfac34ba2",
 								"exec": [
-									"pm.variables.set(\"id_users\", \"3571\");"
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -263,7 +263,27 @@
 								}
 							}
 						},
-						"url": "https://gorest.co.in/public/v2/users/{{id_users}}"
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users/:id",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{id_users}}"
+								}
+							]
+						}
 					},
 					"response": []
 				},
