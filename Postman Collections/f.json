@@ -23,6 +23,21 @@
 				},
 				{
 					"name": "CriaçaoDePost",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "5d41dc0c-b815-4704-a743-faf40530ee5e",
+								"exec": [
+									"pm.test(\"Status code is 201\", () => {",
+									"  pm.response.to.have.status(201);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "6d36744f-6a7e-4ed7-86ad-ec7e842f8dbb",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
