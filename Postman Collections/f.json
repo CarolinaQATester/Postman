@@ -310,19 +310,23 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "30508a49-a765-4e96-a035-a84edcc257cf",
+						"id": "4c6997cc-f1da-43b2-9af2-9f83a3a2c455",
 						"type": "text/javascript",
 						"exec": [
-							"console.log(\"Script executado na pasta\")"
+							"//console.log(\"Script executado na pasta\")"
 						]
 					}
 				},
 				{
 					"listen": "test",
 					"script": {
-						"id": "46f8f93b-2e52-4d33-9150-e9a332e68f5b",
+						"id": "3306c6f2-bf3a-4548-b5d7-cd28727a8dbb",
 						"type": "text/javascript",
 						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"       pm.response.to.have.status(200);",
+							"});",
+							"console.log(\"Script executado na pasta\")",
 							""
 						]
 					}
