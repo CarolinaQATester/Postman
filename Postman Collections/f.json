@@ -10,6 +10,31 @@
 			"item": [
 				{
 					"name": "RetornandoPost",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "166c690a-198d-44cb-8047-b499faf4d799",
+								"exec": [
+									"//pre scrit info",
+									"console.log(pm.info.eventName)",
+									"console.log(pm.info.iteration)",
+									"console.log(pm.info.iterationCount)",
+									"console.log(pm.info.requestName)",
+									"console.log(pm.info.requestId)",
+									"",
+									"//pre script de variaveis",
+									"console.log(",
+									"pm.globals.get(\"variable_key\"));",
+									"console.log(",
+									"pm.environment.get(\"variable_key\"));",
+									"console.log(pm.environment.set(\"title\", \"teste\"));",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "4fc070d5-a9f1-46d4-b638-ffa3a1b06c90",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
