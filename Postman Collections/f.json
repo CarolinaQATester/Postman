@@ -239,16 +239,26 @@
 						},
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": " {\n   \n    \"name\": \"Teste de ctiação com metodo post\",\n    \"email\": \"teste@teste.com.br\",\n    \"gender\": \"female\",\n    \"status\": \"active\"\n  }",
-							"options": {
-								"raw": {
-									"language": "json"
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users?email=teste@teste.com.br",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "teste@teste.com.br"
 								}
-							}
-						},
-						"url": "https://gorest.co.in/public/v2/users"
+							]
+						}
 					},
 					"response": []
 				},
