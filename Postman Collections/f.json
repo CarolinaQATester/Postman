@@ -447,18 +447,17 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "de979fad-c10f-4b97-bf80-1a22a74e0276",
+				"id": "a80a0170-8dc1-4fa9-b61e-e12d7a1d083a",
 				"type": "text/javascript",
 				"exec": [
-					"pm.variables.set(\"id_users\", \"3568\");",
-					"pm.environment.set(\"id_users\", \"3568\");"
+					"console.log(\"Script executado na coleção\")"
 				]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
-				"id": "367f0417-d21c-4a6d-8cf0-738160d24c1d",
+				"id": "f3d564c3-828d-4107-8dbc-7981f48b0e67",
 				"type": "text/javascript",
 				"exec": [
 					""
